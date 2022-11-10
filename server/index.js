@@ -7,8 +7,8 @@ app.use(express.json({limit: '205mb'}));
 const path = require("path");
 const fetch = require("node-fetch");
 
-var cors = require("cors");
-app.use(cors()); 
+/* var cors = require("cors");
+app.use(cors());  */
  
 app.use(express.static(path.join(__dirname, "../client/build")));
 // Used for sending the Json Data to Node API 
